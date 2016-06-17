@@ -20,51 +20,43 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 1 point.
+     * This is called when Team A makes a point; calculates score based on basket type.
      */
-    public void addOneForTeamA(View v) {
-        scoreTeamA = scoreTeamA + freeThrowPoints;
-        displayForTeamA(scoreTeamA);
+    public void teamAMakesBasket(View v) {
+        switch(v.getId()){
+            case (R.id.teamA_add1):
+                scoreTeamA = scoreTeamA + freeThrowPoints;
+                displayForTeamA(scoreTeamA);
+                break;
+            case (R.id.teamA_add2):
+                scoreTeamA = scoreTeamA + twoPointerPoints;
+                displayForTeamA(scoreTeamA);
+                break;
+            case (R.id.teamA_add3):
+                scoreTeamA = scoreTeamA + threePointerPoints;
+                displayForTeamA(scoreTeamA);
+                break;
+        }
     }
 
     /**
-     * Increase the score for Team A by 2 points.
+     * This is called when Team B makes a point; calculates score based on basket type.
      */
-    public void addTwoForTeamA(View v) {
-        scoreTeamA = scoreTeamA + twoPointerPoints;
-        displayForTeamA(scoreTeamA);
-    }
-
-    /**
-     * Increase the score for Team A by 3 points.
-     */
-    public void addThreeForTeamA(View v) {
-        scoreTeamA = scoreTeamA + threePointerPoints;
-        displayForTeamA(scoreTeamA);
-    }
-
-    /**
-     * Increase the score for Team B by 1 point.
-     */
-    public void addOneForTeamB(View v) {
-        scoreTeamB = scoreTeamB + freeThrowPoints;
-        displayForTeamB(scoreTeamB);
-    }
-
-    /**
-     * Increase the score for Team B by 2 points.
-     */
-    public void addTwoForTeamB(View v) {
-        scoreTeamB = scoreTeamB + twoPointerPoints;
-        displayForTeamB(scoreTeamB);
-    }
-
-    /**
-     * Increase the score for Team B by 3 points.
-     */
-    public void addThreeForTeamB(View v) {
-        scoreTeamB = scoreTeamB + threePointerPoints;
-        displayForTeamB(scoreTeamB);
+    public void teamBMakesBasket(View v) {
+        switch(v.getId()){
+            case (R.id.teamB_add1):
+                scoreTeamB = scoreTeamB + freeThrowPoints;
+                displayForTeamB(scoreTeamB);
+                break;
+            case (R.id.teamB_add2):
+                scoreTeamB = scoreTeamB + twoPointerPoints;
+                displayForTeamB(scoreTeamB);
+                break;
+            case (R.id.teamB_add3):
+                scoreTeamB = scoreTeamB + threePointerPoints;
+                displayForTeamB(scoreTeamB);
+                break;
+        }
     }
 
     /**

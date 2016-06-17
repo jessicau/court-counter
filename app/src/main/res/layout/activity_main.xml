@@ -38,30 +38,33 @@
                 android:textSize="56sp"/>
 
             <Button
+                android:id="@+id/teamA_add3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addThreeForTeamA"
+                android:onClick="teamAMakesBasket"
                 android:text="+3 Points" />
 
             <Button
+                android:id="@+id/teamA_add2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addTwoForTeamA"
+                android:onClick="teamAMakesBasket"
                 android:text="+2 Points" />
 
             <Button
+                android:id="@+id/teamA_add1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addOneForTeamA"
+                android:onClick="teamAMakesBasket"
                 android:text="Free throw" />
         </LinearLayout>
 
@@ -99,30 +102,33 @@
                 android:textColor="#000000"/>
 
             <Button
+                android:id="@+id/teamB_add3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addThreeForTeamB"
+                android:onClick="teamBMakesBasket"
                 android:text="+3 Points" />
 
             <Button
+                android:id="@+id/teamB_add2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addTwoForTeamB"
+                android:onClick="teamBMakesBasket"
                 android:text="+2 Points" />
 
             <Button
+                android:id="@+id/teamB_add1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addOneForTeamB"
+                android:onClick="teamBMakesBasket"
                 android:text="Free throw" />
         </LinearLayout>
     </LinearLayout>
